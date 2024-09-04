@@ -14,9 +14,9 @@ function Login() {
     {} as UsuarioLogin
   );
 
-  const { usuario, handleLogin, isLoading } = useContext(AuthContext);
+  const { usuario, handleLogin } = useContext(AuthContext);
 
-  // const {isLoading} = useContext(AuthContext) 
+  const {isLoading} = useContext(AuthContext) 
 
   useEffect(() => {
     if (usuario.token !== "") {
